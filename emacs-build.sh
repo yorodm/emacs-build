@@ -278,11 +278,10 @@ rsvg librsvg
 cairo cairo
 harfbuzz harfbuzz
 json jansson
-lcms2 lcms2
 xml2 libxml2
 gnutls gnutls
 zlib zlib
-native-comp gccjit
+native-comp libgccjit
 EOF
 
 }

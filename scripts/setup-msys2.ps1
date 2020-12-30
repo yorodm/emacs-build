@@ -49,5 +49,4 @@ if ( !(Test-Path ${msys2_dir}\msys2_shell.cmd) ) {
 	.\scripts\msys2.cmd -c 'pacman --noprogressbar --needed --noconfirm -S mingw-w64-x86_64-xpm-nox mingw-w64-x86_64-libtiff mingw-w64-x86_64-giflib mingw-w64-x86_64-jbigkit'
 	.\scripts\msys2.cmd -c 'pacman --noprogressbar --needed --noconfirm -S mingw-w64-x86_64-libpng mingw-w64-x86_64-libjpeg-turbo mingw-w64-x86_64-librsvg mingw-w64-x86_64-libxml2'
 	.\scripts\msys2.cmd -c 'pacman --noprogressbar --needed --noconfirm -S mingw-w64-x86_64-gnutls mingw-w64-x86_64-libgccjit mingw-w64-x86_64-jansson mingw-w64-x86_64-cairo mingw-w64-x86_64-zlib'
-		.\scripts\msys2.cmd -c 'pacman --noprogressbar --needed --noconfirm -S mingw-w64-x86_64-gccjit mingw-w64-x86_64-lcms2'
 }
