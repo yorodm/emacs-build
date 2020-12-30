@@ -159,7 +159,7 @@ function action1_ensure_packages ()
     # have been installed.
     #
     # ensure_packages `emacs_dependencies`
-	yes
+	echo "This line is bogus"
 }
 
 function action2_build ()
