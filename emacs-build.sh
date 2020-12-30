@@ -158,7 +158,7 @@ function action1_ensure_packages ()
     # Collect the list of packages required for running Emacs, and ensure they
     # have been installed.
     #
-    ensure_packages `emacs_dependencies`
+    # ensure_packages `emacs_dependencies`
 }
 
 function action2_build ()
