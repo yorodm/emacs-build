@@ -168,7 +168,7 @@ function action2_build ()
     if prepare_source_dir $emacs_source_dir \
             && prepare_build_dir $emacs_build_dir && emacs_configure_build_dir; then
         echo Building Emacs in directory $emacs_build_dir
-        make -j 4 -C $emacs_build_dir && return 0
+        make -j 8 -C $emacs_build_dir && return 0
     fi
     echo Configuration and build process failed
     return -1
@@ -191,7 +191,7 @@ function action2_install ()
         # HACK!!! Somehow libgmp is not installed as part of the
         # standalone Emacs build process. This is weird, but means
         # we have to copy it by hand.
-        make -j 4 -C $emacs_build_dir install \
+        make -j 8 -C $emacs_build_dir install \
             && cp "${mingw_dir}bin/libgmp"*.dll "$emacs_install_dir/bin/" \
             && rm -f "$emacs_install_dir/bin/emacs-"*.exe \
             && find "$emacs_install_dir" -name '*.exe' -exec strip -g --strip-unneeded -X '{}' '+' \
