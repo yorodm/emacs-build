@@ -270,18 +270,9 @@ function action5_package_all ()
 
 function feature_list () {
     cat <<EOF
-xpm xpm-nox
-jpeg libjpeg-turbo
-tiff libtiff
-gif giflib
-png libpng
-rsvg librsvg
 cairo cairo
 harfbuzz harfbuzz
-json jansson
-xml2 libxml2
 gnutls gnutls
-zlib zlib
 native-comp libgccjit
 EOF
 
